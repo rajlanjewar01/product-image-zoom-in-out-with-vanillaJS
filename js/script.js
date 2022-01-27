@@ -30,16 +30,10 @@ var prodImg = document.querySelector("#product-img");
 const imgActualWidth = document.querySelector("#product-img").clientWidth;
 const imgActualHeight = document.querySelector("#product-img").clientHeight;
 
-
-//get image width
+//get current showing image width
 var imgCurrWidth = prodImg.clientWidth;
-
-//get image height
+//get current showing image height
 var imgCurrHeight = prodImg.clientHeight;
-
-
-var zoomInBtn = $("#zoom-in");
-var zoomOutBtn = $("#zoom-out");
 
 //zoom in image
 function zoomIn(){
@@ -51,7 +45,6 @@ function zoomIn(){
         prodImg.style.height = (imgCurrHeight += 100) + "px";
     }
 }
-
 
 //zoom out image
 function zoomOut(){
